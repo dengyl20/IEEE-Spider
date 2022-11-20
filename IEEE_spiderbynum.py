@@ -17,12 +17,13 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 durl = 'https://ieeexplore.ieee.org/document/'
-apiurl = 'http://ieeexploreapi.ieee.org/api/v1/search/articles?apikey=gqk6ss8wkj3zd4khxqtntwfe&format=json' \
-         '&max_records=2&start_record=1&sort_order=asc&sort_field=article_number&article_number='
+api_key = ''
+apiurl = f'http://ieeexploreapi.ieee.org/api/v1/search/articles?apikey={api_key}&format=json' \
+         f'&max_records=2&start_record=1&sort_order=asc&sort_field=article_number&article_number='
 # df = []
 
 # 输入csv文件路径：
-oricsv = '/Users/dengyunlong/PycharmProjects/IEEE_spider_bynum/Pat_Hanrahan_1_Allcitation_Link.csv'
+oricsv = ''
 # 输出到csv路径：
 aimcsv = 'IEEE_PatHarahan_1_Article.csv'
 
